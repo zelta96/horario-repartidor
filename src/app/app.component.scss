@@ -1,8 +1,11 @@
-mat-sidenav-container{
-  height: 100%;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-mat-sidenav{
-  padding: 16px;
-  background-color: antiquewhite;
-  width: 200px;
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }

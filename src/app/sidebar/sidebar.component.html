@@ -1,1 +1,46 @@
-<p>sidebar works!</p>
+<div class="sidebar">
+    <div class="logo_content">
+        <div class="logo">
+            <div class="logo_name">ZeltaLab</div>
+        </div>
+        <fa-icon [icon]="faBars" id="btn"></fa-icon>
+    </div>
+    <ul class="nav_list">
+        <li>
+            <a href="#">
+                <fa-icon [icon]="faHome"></fa-icon>
+                <span class="links_name">Dasboard</span>
+            </a>
+            <!--span class="tooltip">Dasboard</span-->
+        </li>
+        <li>
+            <a href="#">
+                <fa-icon [icon]="faUsers"></fa-icon>
+                <span class="links_name">Employers</span>
+            </a>
+            <!--span class="tooltip">Employers</span-->
+        </li>
+        <li>
+            <a href="#">
+                <fa-icon [icon]="faClock"></fa-icon>
+                <span class="links_name">Schedule</span>
+            </a>
+            <!--span class="tooltip">Schedule</span-->
+        </li>
+        <li>
+            <a href="#">
+                <fa-icon [icon]="faCog"></fa-icon>
+                <span class="links_name">Configurations</span>
+            </a>
+            <!--span class="tooltip">Dasboard</span-->
+        </li>
+        <li>
+            <a href="#">
+                <fa-icon [icon]="faDoorOpen"></fa-icon>
+                <span class="links_name">Logout</span>
+            </a>
+            <!--span class="tooltip">Dasboard</span-->
+        </li>
+    </ul>
+
+</div>
