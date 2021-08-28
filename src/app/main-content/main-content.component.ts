@@ -4,7 +4,7 @@ import { Repartidores } from 'src/model/repartidores.model';
 @Component({
   selector: 'app-main-content',
   templateUrl: './main-content.component.html',
-  styleUrls: ['./main-content.component.sass']
+  styleUrls: ['./main-content.component.scss']
 })
 export class MainContentComponent  {
   repartidores: Repartidores[] = [new Repartidores('juan','perez'),new Repartidores('alicia','lopez'),];
