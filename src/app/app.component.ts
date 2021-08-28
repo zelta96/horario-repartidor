@@ -12,4 +12,5 @@ export class AppComponent {
   title = 'horario-repartidor';
   faCoffee = faCoffee;
   mode = new FormControl('over');
+  showFiller = false;
 }

@@ -7,9 +7,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { CardComponent } from './card/card.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material.module'
+import { MaterialModule } from './module/material.module'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MainContentComponent } from './main-content/main-content.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     AppComponent,
     SidebarComponent,
     CardComponent,
-    HeaderComponent
+    HeaderComponent,
+    MainContentComponent
   ],
   imports: [
     BrowserModule,
