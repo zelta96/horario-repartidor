@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Repartidores } from './../../model/repartidores.model';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-
+  @Input() reparetidorData:Repartidores = new Repartidores("","");
   constructor() { }
 
   ngOnInit(): void {
