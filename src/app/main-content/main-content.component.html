@@ -1,8 +1,10 @@
 <div class="content">
+  <app-form-repartidor>
+  </app-form-repartidor>
   <div fxLayout="row wrap" fxLayoutGap="16px grid">
-    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let reparetidor of repartidores">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let repartidor of repartidores">
       <app-card
-        [reparetidorData] = "reparetidor"
+        [reparetidorData] = "repartidor"
       ></app-card>
     </div>
   </div>

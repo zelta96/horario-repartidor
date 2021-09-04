@@ -1,3 +1,4 @@
+import { LogsSystemService } from './services/logs-system.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,12 +14,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MainContentComponent } from './main-content/main-content.component';
 import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormRepartidorComponent } from './form-repartidor/form-repartidor.component';
+import { RepartidorService } from './services/repartidor.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +25,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CardComponent,
     HeaderComponent,
     MainContentComponent,
-    NavComponent
+    NavComponent,
+    FormRepartidorComponent
   ],
   imports: [
     BrowserModule,
@@ -38,14 +37,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FormsModule,
     ReactiveFormsModule,
     LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
     FlexLayoutModule 
   ],
-  providers: [],
+  providers: [LogsSystemService,
+              RepartidorService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

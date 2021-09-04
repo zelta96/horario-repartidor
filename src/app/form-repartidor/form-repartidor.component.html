@@ -1,0 +1,23 @@
+<form class="form-row">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Nombre</mat-label>
+        <input matInput 
+        placeholder="Nombre" 
+        id="nombre"
+        class="form-control"
+        #inputNombre>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Apellido</mat-label>
+        <input matInput 
+        placeholder="Apellido" 
+        id="apellido"
+        class="form-control"
+        #inputApellido>
+    </mat-form-field>
+    <div class="col">
+      <button type="submit" class="btn btn-primary" (click)="agregarPersona(inputNombre,inputApellido)">
+        Agregar
+      </button>
+    </div>
+  </form>
